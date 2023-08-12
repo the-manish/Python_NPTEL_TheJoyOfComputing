@@ -21,7 +21,7 @@ def play():
      turn=0
      while(1):
         #computer's task
-        picked-word=choose()
+        picked_word=choose()
         #create question
         qn=jumble(picked_word)
         print qn
