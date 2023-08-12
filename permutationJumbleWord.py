@@ -1,13 +1,16 @@
 import random
-def choose():worsd['rainbow','computer','science','programming','mathematics','player','condition','reverse','water','board']
-pick=random.choice(words)
-return pick
+def choose():
+    words=['rainbow','computer','science','programming','mathematics','player','condition','reverse','water','board']
+    pick=random.choice(words)
+    return pick
 
-def jumble(words):
+ 
+
+def jumble(word):
     jumbled="".join(random.sample(word,len(word)))
     return jumbled
 
-    def thank(p1n,p2n,p1,p2):
+def thank(p1n,p2n,p1,p2):
         print(p1n,'your score is:',p1)
         print(p2n,'your score is:',p2)
         print('Thanks for playing')
@@ -24,8 +27,9 @@ def play():
         picked_word=choose()
         #create question
         qn=jumble(picked_word)
-        print qn
-        if turn%2=0:
+        print(qn)
+        #player 1
+        if turn%2==0:
             print(p1name,'Your turn.')
             ans=input('What is on my mind?')
             if ans==picked_words:
@@ -34,7 +38,7 @@ def play():
             else:
                 print('Better luck next time,I thought:',picked_word)
             c=input('Press 1 to continue and 0 to quit :')
-            if c=0:
+            if c==0:
                 thank(p1name,p2name,pp1,pp2)
                 break
             #player2
@@ -43,9 +47,12 @@ def play():
             ans=input('What is on my mind?')
             if ans==picked_words:
                 pp2=pp2+1
-                print('Your score is:',ppl)
+                print('Your score is:',pp2)
             else:
                 print('Better luck next time,I thought:',picked_word)
             c=input('Press 1 to continue and 0mto quit :')
+            if c==0:
+                thank(p1name,p2name,pp1,pp2)
+                break
             
         
