@@ -8,8 +8,8 @@ def jumble(words):
     return jumbled
 
     def thank(p1n,p2n,p1,p2):
-        print(p1n,'your score is:'p1)
-        print(p2n,'your score is:'p2)
+        print(p1n,'your score is:',p1)
+        print(p2n,'your score is:',p2)
         print('Thanks for playing')
         print('Have a nice day')
 
