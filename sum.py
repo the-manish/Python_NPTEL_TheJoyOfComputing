@@ -11,4 +11,4 @@ print(ans)
 num=0
 for i in range(100):
  num=num+i
- print(i," ",num)
+ print(i,"  ",num)
