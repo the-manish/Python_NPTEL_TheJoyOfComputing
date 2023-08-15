@@ -17,7 +17,7 @@ def thank(p1n,p2n,p1,p2):
         print('Have a nice day')
 
 def play():
-     plname=input('Player1,Please enter your name')
+     p1name=input('Player1,Please enter your name')
      p2name=input('Player2,Please enter your name')
      pp1=0
      pp2=0
@@ -32,7 +32,7 @@ def play():
         if turn%2==0:
             print(p1name,'Your turn.')
             ans=input('What is on my mind?')
-            if ans==picked_words:
+            if ans==picked_word:
                 ppl=ppl+1
                 print('Your score is:',ppl)
             else:
@@ -45,7 +45,7 @@ def play():
         else:
             print(p2name,'Your turn.')
             ans=input('What is on my mind?')
-            if ans==picked_words:
+            if ans==picked_word:
                 pp2=pp2+1
                 print('Your score is:',pp2)
             else:
