@@ -12,7 +12,7 @@ def magic_square(n):
         for j in range(n):
 
          print(magicSquare[i][j],end="")
-         print()
+    print()
          
 
 magic_square(3)
