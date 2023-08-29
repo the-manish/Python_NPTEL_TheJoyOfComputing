@@ -1,5 +1,7 @@
 import string
 dict={}
+data=""
+file=open("op_file.txt","w")
 for i in range(len(string.ascii_letters)):
     dict[string.ascii_letters[i]]=string.ascii_letters[i-1]
 print(dict)
@@ -14,3 +16,4 @@ with open("ip-file.txt") as f:
         else:
             data=c
         print(data)
+file.close()
