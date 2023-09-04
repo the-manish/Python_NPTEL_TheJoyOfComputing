@@ -1,7 +1,7 @@
 def binary_search(l,x,start,end):
     # Base case:1 Element
     if start==end:
-        if l[start]==x:
+        if l[start]== x:
             return start
         else:
             return -1
